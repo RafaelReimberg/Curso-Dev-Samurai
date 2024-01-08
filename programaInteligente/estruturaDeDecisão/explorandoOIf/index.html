@@ -1,0 +1,47 @@
+<!--
+    SE (condição verdadeira)
+        Faz algo
+    SENÃO
+        Faz outro
+        
+    Linguagem do JavaScript:
+
+        IF(expressão)
+            Faz algo
+        ELSE
+            Faz outro    
+
+
+    Português | pt | Olá
+    Inglês    | en | Hi
+    Francês   | fr | Salut
+    Espanhol  | es | Hola
+
+-->
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <p>Vamos incrementar o nosso <strong>"Olá mundo".</strong></p>
+
+    <script>
+        var idioma = prompt("Por favor, digite o código do IDIOMA:");
+
+        // pt == pt = true   
+        if(idioma == "pt") {
+            alert("Olá");
+        // posso colocar outros cogidos aqui ...    
+        } else if (idioma == "en"){
+            alert("Hi"); 
+        } else if(idioma == "fr"){
+            alert("Salut");
+        } else if(idioma == "es"){
+            alert("Hola");
+        } else {
+            alert("Código do idioma não reconhecido");
+        }
+
+        alert("Execução Continua");    
+
+        //
+    </script>
+</html>    
