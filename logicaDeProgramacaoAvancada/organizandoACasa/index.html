@@ -1,0 +1,63 @@
+<!--
+    Funções ajudam a organizar e centralizar códigos.
+
+    - Dividei e estruturar um algoritmo em partes logicamente coerentes.
+    - Facilitar o teste em trechos separados.
+    - Criar sua própria biblioteca.
+    - Aumentar a legibilidade do código.
+    - Evitar a repetição de código. 
+
+    // início 
+    ...
+    funcao1() <--- function funcao1(){
+                    ...
+                    return ... 
+    ...       <---  }
+    
+    // fim
+
+-->
+
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <p>Funções</p>
+
+    <script>
+        function soma(a, b){
+            return a + b
+        };
+
+        function subtracao(a, b){
+            return a - b
+        };
+
+        function multiplicacao(a, b){
+            return a * b
+        };
+        
+        function divisao(a, b){
+            return a / b
+        };
+
+        var n1 = Number(prompt("Número 1"));
+        var n2 = Number(prompt("Número 2"));
+        var op = prompt("Operação");
+
+        // "1" + "2" = "12"
+        var resultado
+        
+        if (op == "+"){
+            resultado = soma(n1, n2);
+        } else if (op == "-"){
+            resultado = subtracao(n1, n2);
+        } else if (op == "*"){
+            resultado = multiplicacao(n1, n2);
+        } else if (op == "/"){
+            resultado = divisao(n1, n2);
+        } else {
+            alert("Operação não desclarada!");
+        }
+
+        alert(resultado);
+    </script>
+</html>    
