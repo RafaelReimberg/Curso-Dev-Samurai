@@ -1,0 +1,31 @@
+<!--
+  
+-->
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <p>Vamos incrementar o nosso <strong>"Olá mundo".</strong></p>
+
+    <script>
+        var idioma = prompt("Por favor, digite o código do IDIOMA:");
+        var variacao = prompt("Por favor, digite a vaiação:");
+
+        // pt-bt = Olá
+        // pt-pt = Olá 
+
+        // en-us = Hi
+        // en-gb = Hello
+
+        //        t/f     &&                   t/f 
+        // idioma == "pt" && (variacao == "br" || variacao == "pt")
+  
+        if ((idioma == "pt") && (variacao == "br" || variacao == "pt")) {
+            alert("Olá");
+        } else if ((idioma == "en") && (variacao == "us")){
+            alert("Hi");
+        } else if ((idioma == "en") && (variacao == "gb")){
+            alert("Hello");
+        }
+       
+    </script>
+</html>    
