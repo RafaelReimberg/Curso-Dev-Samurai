@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo Ping-Pong</title>
+    <style>
+        *{
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <canvas></canvas>
@@ -15,9 +22,14 @@
                 canvasEl.width  = canvasCtx.width  = window.innerWidth;
                 canvasEl.height = canvasCtx.height = window.innerHeight;
               };
-              function draw(){};
+              function draw(){
+                canvasCtx.fillStyle = "#000000";
+                canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+              };
 
               setup();
+
+              draw();
     </script>
 </body>
 </html>
