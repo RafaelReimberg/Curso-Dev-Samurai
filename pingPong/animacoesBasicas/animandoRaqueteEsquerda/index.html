@@ -18,7 +18,8 @@
         const canvasEl = document.querySelector("canvas"),
               canvasCtx = canvasEl.getContext("2d"),
               gapX = 10;
-
+        
+        const mouse = { x: 0, y: 0 };      
           
         
         const field = {
@@ -29,7 +30,7 @@
                 canvasCtx.fillStyle = "#000000";
                 canvasCtx.fillRect(0, 0, this.w, this.h);
             },
-        }
+        };
 
         const line = {
             w: 15,
@@ -39,19 +40,24 @@
                 canvasCtx.fillStyle = "#ffffff";
                 canvasCtx.fillRect(field.w / 2 - this.w / 2, 0, this.w, this.h);
             },
-        }
+        };
         
         const leftPaddle = {
             x: gapX,
-            y: 100,
+            y: 0,
             w: line.w,
             h: 200,
+            _move: function(){
+                this.y = mouse.y - this.h / 2;
+            },
             draw: function(){
                 //desenhar a raquete esqueda
                 canvasCtx.fillStyle = "#ffffff";
                 canvasCtx.fillRect(this.x, this.y, this.w, this.h);
+
+                this._move();
             },
-        }
+        };
 
         const rightPaddle = {
             x: field.w - line.w - gapX,
@@ -63,7 +69,7 @@
                 canvasCtx.fillStyle = "#ffffff";
                 canvasCtx.fillRect(this.x, this.y, this.w, this.h);
             },
-        }
+        };
 
         const score = {
             human: 1,
@@ -77,7 +83,7 @@
                 canvasCtx.fillText(this.human, field.w / 4, 50);
                 canvasCtx.fillText(this.computer, field.w / 4 + field.w / 2, 50);
             },
-        }
+        };
 
         const ball = {
             x: 300,
@@ -97,7 +103,7 @@
 
             this._move();    
             },
-        }
+        };
 
             function setup(){
                 canvasEl.width  = canvasCtx.width  = field.w;
@@ -116,10 +122,32 @@
                 ball.draw();               
               };
 
-              setup();
-              draw();
+              window.animateFrame = (function(){
+                return (
+                    window.requestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    window.oRequestAnimationFrame ||
+                    window.msRequestAnimationFrame ||
+                    function (callback){
+                        return window.setInterval(draw, 1000 / 60);
+                    }
+                )
+              })();
 
-              window.setInterval(draw, 1000 / 60);
-    </script>
+              function main(){
+                animateFrame(main);
+                draw();
+              };
+
+              setup();
+              main();
+
+              canvasEl.addEventListener("mousemove", function(e){
+                mouse.x = e.pageX;
+                mouse.y = e.pageY;
+              });
+
+        </script>
 </body>
 </html>
