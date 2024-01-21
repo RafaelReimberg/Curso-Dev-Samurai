@@ -80,8 +80,14 @@
         };
 
         const score = {
-            human: 1,
-            computer: 2,
+            human: 0,
+            computer: 0,
+            increaseHuman: function(){
+                this.human ++
+            },
+            increaseComputer: function(){
+                this.computer ++
+            },
             draw: function(){
                 //desenhar o placar
                 canvasCtx.font = "bold 72px Arial";
@@ -101,6 +107,39 @@
             directionX: 1,
             directionY: 1,
             _calcPosition: function(){
+                // verifica se o jogador 1 fez um ponto (x > Largura do campo)
+                if(this.x > field.w - this.r - rightPaddle.w - gapX){
+                    // verifica se a raquete direta está na posição y da bola     
+                    if(
+                        this.y + this.r > rightPaddle.y &&
+                        this.y - this.r < rightPaddle.y + rightPaddle.h
+                    ){
+                        // rebate a bola invertendo o sinal de X.
+                        this._reverseX();
+                    } else{
+                        // pontuar o jogador 1
+                        score.increaseHuman();
+                        this._pointUp();
+                    };
+                };
+
+                // verifica se o jogador 2 fez um ponto ( x < 0)
+                if (this.x < this.r + leftPaddle.w + gapX){
+                    // verifica se a raquete esquerda está na posição Y da bola
+                    if(
+                        this.y + this.r > leftPaddle.y && 
+                        this.y - this.r < leftPaddle.y + leftPaddle.h
+                    ){
+                        // rebate a bola invertendo o sinal de X.
+                        this._reverseX();
+                    } else{
+                        // pontuar o jogador 2
+                        score.increaseComputer();
+                        this._pointUp();
+                    }; 
+                };
+
+
                 // verifica as laterais superior e inferior do campo
                 if(
                 (this.y - this.r < 0 && this.directionY < 0) ||    
@@ -120,7 +159,17 @@
                 // -1 * -1 = 1
                 this.directionY *= -1;
             },
+            _speedUp: function(){
+                this.speed += 3;
+            },
+            _pointUp: function(){
+                this.x = field.w / 2;
+                this.y = field.h / 2;
+            
+                this._speedUp();
+            },
             _move: function(){
+                // movimentação da bolinha
                 this.x += this.directionX * this.speed;
                 this.y += this.directionY * this.speed;
             },
