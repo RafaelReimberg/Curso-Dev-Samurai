@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UFT-8">
+    </head>
+    <script>
+        // variável + indice (que sempre inicia do 0)
+        // const persons = ["Rafael", "Natalia", "Gabriel"];
+
+        const persons = [
+            {name: "Rafael", age: 36 },
+            {name: "Natalia", age: 31 },
+            {name: "Gabriel", age: 6 },
+            // "Luiza", // não seria uma boa prática (misturar tipos dentro do array)
+        ];
+
+        // persons[0] = "Luiza";
+        persons[3] = "Luiza"; // não seira uma boa prática (está fora do range dos indices.)
+
+        // const person1 = "Rafael";
+        //const person2 = "Natalia";
+        //const person3 = "Gabriel";
+        // ...
+        
+
+        //console.log(person1);
+        //console.log(person2);
+        //console.log(person3);
+        // ...
+        console.log(persons);
+        console.log(persons.length  );
+        console.log(persons[0]);
+        console.log(persons[1]);
+        console.log(persons[2]);
+        // console.log(persons[3]);
+    </script>
+</html>
