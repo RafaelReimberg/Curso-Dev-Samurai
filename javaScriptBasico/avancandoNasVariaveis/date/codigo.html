@@ -3,6 +3,20 @@
         <meta charset="UFT-8">
     </head>
     <script>
-        
+        // const bornDate = new Date();
+        // const bornDate = new Date(1987, 5, 19, 14, 48, 59);
+        // const bornDate = new Date("Jun 19 1987 14:48:52");
+        const bornDate = new Date("1987-06-19T09:00:00.000Z");
+        const today = new Date();
+
+
+        console.log(bornDate);
+        console.log(bornDate.toISOString());
+        console.log("dia", bornDate.getDate());
+        console.log("mês", bornDate.getMonth() + 1);
+        console.log("ano", bornDate.getFullYear());
+
+        console.log("Idade", today.getFullYear() - bornDate.getFullYear());
+
     </script>
 </html>
