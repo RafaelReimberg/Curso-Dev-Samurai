@@ -1,0 +1,23 @@
+<html>
+  <meta charset="UTF-8" />
+  <script>
+    function mult(values, func) {
+      for (let i = 0; i < values.length; i++) {
+        // console.log(arguments);
+
+        // values[i] *= values[i]; // n *= n       
+        values[i] = func(values[i]);
+      }
+
+      return values;
+    }
+
+    const values = [1, 2, 3, 4, 10];
+    const func = (n) => n * 2;
+
+    // callbacks: map, filter, reduce 
+
+    // console.log(mult(values, (n) => n * 2));
+    console.log(mult(values, func));
+  </script>
+</html>
