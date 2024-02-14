@@ -3,32 +3,44 @@
   <script>
     const numbers = [10, 18, 1, 15];
 
-        let res = [];
-            for (const n of numbers) {
-            if (n > 10) {
-                res.push(n);
-            };
-            };
-        console.log(res);
+    //     let res = [];
+    //         for (const n of numbers) {
+    //         if (n > 10) {
+    //             res.push(n);
+    //         };
+    //         };
+        // console.log(res);
 
-    // let res = numbers.filter((n) => n > 10)
-    // console.log(res)
+        // const gt10 = function (item){
+        //   return item > 10; // true / false 
+        // }; 
 
-    // const people = [
-    //   { name: "Rafael", gender: "M", age: 36 },
-    //   { name: "Natália", gender: "F", age: 32 },
-    //   { name: "Gabriel", gender: "M", age: 06 },
-    // ]
-s
-    // const m = people.filter((p) => p.age >= 18)
-    // console.log(m)
+      // let res = numbers.filter(gt10);
+      // console.log(res);
 
-    // const n = people.filter((p) => p.age >= 18 && p.gender === "M")
-    // console.log(n)
+      // let res = numbers.filter(function(item){
+      //   return item > 10;
+      // });
+      // console.log(res);
 
-    // const x = people.filter(
-    //   (p) => p.age >= 18 && p.age <= 25 && p.gender === "M"
-    // )
-    // console.log(x)
+    let res = numbers.filter((n) => n > 10);
+    console.log(res);
+
+    const people = [
+      { name: "Rafael", gender: "M", age: 36 },
+      { name: "Natália", gender: "F", age: 32 },
+      { name: "Gabriel", gender: "M", age: 6 },
+    ]
+
+    const m = people.filter((p) => p.age >= 18);
+    // console.log(m);
+
+    const n = people.filter((p) => p.age >= 18 && p.gender === "M");
+    console.log(n);
+
+    const x = people.filter(
+      (p) => p.age >= 18 && p.age <= 25 && p.gender === "M"
+    );
+    console.log(x);
   </script>
 </html>
