@@ -44,6 +44,8 @@
     // soma(valores) / quant. valores
     // 3, 4, 5
     // (3 + 4 + 5) / 3
+
+    // avg = sum / values.length(); 
     // let avg = values.reduce(
     //   (total, item, index) => (total + item) / (index + 1),
     //   0
@@ -51,17 +53,17 @@
     // console.log("avg", avg);
 
     // Map
-    let double = values.reduce((total, item) => total.concat(item * 2), []);
-    console.log("double", double);
+    // let double = values.reduce((total, item) => total.concat(item * 2), []);
+    // console.log("double", double);
 
     // Filter
-    // let newValues = values.reduce((total, item) => {
-    //   if (item > 2) {
-    //     total.push(item);
-    //   };
+    let newValues = values.reduce((total, item) => {
+      if (item > 2) {
+        total.push(item);
+      };
 
-    //   return total
-    // }, [])
-    // console.log("newValues", newValues)
+      return total;
+    }, []);
+    console.log("newValues", newValues);
   </script>
 </html>
