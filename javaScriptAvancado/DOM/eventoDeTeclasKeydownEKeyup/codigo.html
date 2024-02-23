@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <input type="text" />
+
+    <script>
+      // https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+
+      const inputEl = document.querySelector("input[type=text]");
+      inputEl.addEventListener("keydown", (event) => {
+        console.log("keydown", event);
+      });
+
+      // inputEl.addEventListener("keyup", (event) => {
+      //   console.log("keyup");
+      // });
+    </script>
+  </body>
+</html>
