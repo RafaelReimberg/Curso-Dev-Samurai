@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1 id="title">Título da página</h1>
+    <button id="change-color">Alterar cor</button>
+    </form>
+
+    <script>
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+
+      const titleEl = document.querySelector("#title");
+
+      const buttonEl = document.querySelector("#change-color");
+      buttonEl.addEventListener("click", () => {
+        // titleEl.style = "color: red; font-size: 55px; font-family: Arial";
+        titleEl.style.color = "red";
+        titleEl.style.fontSize = "55px";
+        titleEl.style.fontFamily = "Arial";
+      });
+    </script>
+  </body>
+</html>
+  
