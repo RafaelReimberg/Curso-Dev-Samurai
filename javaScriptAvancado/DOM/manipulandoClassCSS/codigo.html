@@ -1,22 +1,45 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <style>
+      .highlight {
+        color: red;
+        font-size: 55px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        border: 2px solid red;
+        border-radius: 10px;
+      }
+
+      #title{
+        font-size: 55px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+      }
+
+    </style>
   </head>
   <body>
     <h1 id="title">Título da página</h1>
-    <button id="change-color">Alterar classe</button>
+    <button id="change-class">Alterar classe</button>
  
     <script>
       // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
 
       const titleEl = document.querySelector("#title");
 
-      const buttonEl = document.querySelector("#change-color");
+      const buttonEl = document.querySelector("#change-class");
       buttonEl.addEventListener("click", () => {
-        // titleEl.style = "color: red; font-size: 55px; font-family: Arial";
-        titleEl.style.color = "red";
-        titleEl.style.fontSize = "55px";
-        titleEl.style.fontFamily = "Arial";
+
+        // if (titleEl.classList.contains("highlight")){
+        //   titleEl.classList.remove("highlight");
+        // }else {
+        //   titleEl.classList.add("highlight");
+        // }
+
+        titleEl.classList.toggle("highlight");
       });
     </script>
   </body>
