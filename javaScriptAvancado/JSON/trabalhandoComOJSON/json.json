@@ -1,0 +1,12 @@
+{
+    "name": "Rafael Reimberg",
+    "age": 36,
+    "adress": {
+        "street": "Rua Emmanuel Chabrier",
+        "number": "166",
+        "complement": "b",
+        "district": "Zona Sul",
+        "city": "São Paulo - Grajáu",
+        "state": "São Paulo"
+    }
+}

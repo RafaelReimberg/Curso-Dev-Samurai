@@ -14,33 +14,31 @@
       // fulfilled (realizada): sucesso na operação.
       // rejected (rejeitado): falha na operação.
 
-      let count = 0
+      let count = 0;
       function testPromise() {
-        const promiseCount = ++count
+        const promiseCount = ++count;
 
-        console.log("sync started")
+        console.log("sync started");
 
         new Promise((resolve, reject) => {
           setTimeout(() => {
             if (promiseCount % 2 == 0) {
-              resolve(promiseCount)
+              resolve(promiseCount);
             } else {
-              reject(promiseCount)
-            }
-          }, 1000)
-        })
-          .then((value) => {
-            console.log(`async finished ${value}`)
-          })
-          .catch((value) => {
-            console.error("async error")
-          })
+              reject(promiseCount);
+            };
+          }, 1000);
+        }).then((value) => {
+            console.log(`async finished ${value}`);
+          }).catch((value) => {
+            console.error("async error");
+          });
+          
+        console.log("sync finished");
+      };
 
-        console.log("sync finished")
-      }
-
-      const buttonEl = document.querySelector("button")
-      buttonEl.addEventListener("click", testPromise)
+      const buttonEl = document.querySelector("button");
+      buttonEl.addEventListener("click", testPromise);
     </script>
   </body>
 </html>
