@@ -7,6 +7,8 @@
     <button>Recuperar Dados</button>
     <br />
     <br />
+
+    <a href="" ></a>
     <script>
       const loadData = () => {
         const xhr = new XMLHttpRequest();
@@ -33,11 +35,11 @@
             const nameEl = document.createElement("h1");
             nameEl.innerText = name;
 
-            // <p>Followers: 207</p>
+            // <p>Followers: 1</p>
             const followersEl = document.createElement("p");
             followersEl.innerText = `Followers: ${followers}`;
 
-            // <a href="https://devsamurai.com.br">devsamurai.com.br</a>
+            // <a href="#">rafaelreimberg.com.br</a>
             const blogEl = document.createElement("a");
             blogEl.setAttribute("href", `https://${blogUrl}`);
             blogEl.innerText = blogUrl;
@@ -46,12 +48,12 @@
             document.body.appendChild(nameEl);
             document.body.appendChild(followersEl);
             document.body.appendChild(blogEl);
-          }
-        }
-      }
+          };
+        };
+      };
 
-      const buttonEl = document.querySelector("button")
-      buttonEl.addEventListener("click", loadData)
+      const buttonEl = document.querySelector("button");
+      buttonEl.addEventListener("click", loadData);
     </script>
   </body>
 </html>
