@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Gerador de senha</h1>
+    <p>Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+
+    <input type="text" name="password" id="password" />
+
+    <input type="range" name="password-length" id="password-length" value="16" min="6" max="64" />
+
+    <button id="copy">Copiar senha</button>
+
+    <script>
+        const inputEl = document.querySelector("#password");
+
+        let passwordLength = 16;
+
+
+        function generatePassword() {
+            const chars = "abcdefghjkmnpqrstuvwxyzAVCDEFGHJKLMNPQRSTUVWXYZ123456789?!@&*()[]";
+
+            let password = "";
+
+            for (let i = 0; i < passwordLength; i++) {
+                const randomNumber = Math.floor(Math.random() * chars.length);
+                password += chars.substring(randomNumber, randomNumber + 1)
+            };
+
+            inputEl.value = password;
+            // console.log(password);
+        }
+
+        function copy() {
+            navigator.clipboard.writeText(inputEl.value);
+        };
+
+        const passwordLengthEl = document.querySelector("#password-length");
+        passwordLengthEl.addEventListener("input", function () {
+            passwordLength = passwordLengthEl.value;
+            // console.log(passwordLength);
+            generatePassword();
+        });
+
+        const copyButtonEl = document.querySelector("#copy");
+        copyButtonEl.addEventListener("click", copy);
+
+        generatePassword();
+    </script>
+</body>
+
+</html>
+
+
