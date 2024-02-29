@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="security-indicator">
-                <div id="security-indicator-bar" class="bar safe completed" style="width: 95%;">
-
+                <div id="security-indicator-bar" class="bar critical">
+                
                 </div>
             </div>
         </section>
@@ -81,6 +81,7 @@
         const upperCaseCheckEl = document.querySelector("#uppercase-check");
         const numberCheckEl = document.querySelector("#number-check");
         const symbolCheckEl = document.querySelector("#symbol-check");
+        const securityIndcatorBarEl = document.querySelector("#security-indicator-bar");
 
         let passwordLength = 16;
 
@@ -114,6 +115,19 @@
 
             inputEl.value = password;
             // console.log(password);
+
+            calculeteQuality();
+        }
+
+        function calculeteQuality() {
+            // 20% -> critico => 100% algo safe
+            // 64/64 = 1 => 100%
+
+            const percent = Math.round((passwordLength / 64) * 100);
+
+            // console.log(percent);
+
+            securityIndcatorBarEl.style.width = `${percent}%`;
         }
 
         function copy() {

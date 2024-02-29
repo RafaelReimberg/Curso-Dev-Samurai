@@ -117,10 +117,11 @@
             inputEl.value = password;
             // console.log(password);
 
-            calculeteQuality();
+            calculateQuality();
+            calculateFontSize();
         }
 
-        function calculeteQuality() {
+        function calculateQuality() {
             // 20% -> critico => 100% algo safe
             // 64/64 = 1 => 100%
 
@@ -161,6 +162,26 @@
                 securityIndcatorBarEl.classList.add("completed");
             } else {
                 securityIndcatorBarEl.classList.remove("completed");
+            }
+        }
+
+        function calculateFontSize(){
+            if(passwordLength > 45) {
+                inputEl.classList.remove("font-sm");
+                inputEl.classList.remove("font-xs");
+                inputEl.classList.add("font-xxs");
+            } else if(passwordLength > 32){
+                inputEl.classList.remove("font-sm");
+                inputEl.classList.add("font-xs");
+                inputEl.classList.remove("font-xxs");
+            } else if (passwordLength > 22){
+                inputEl.classList.add("font-sm");
+                inputEl.classList.remove("font-xs");
+                inputEl.classList.remove("font-xxs");
+            } else {
+                inputEl.classList.remove("font-sm");
+                inputEl.classList.remove("font-xs");
+                inputEl.classList.remove("font-xxs");
             }
         }
 

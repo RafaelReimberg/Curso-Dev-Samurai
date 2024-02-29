@@ -37,8 +37,7 @@
                 </div>
             </div>
             <div class="security-indicator">
-                <div id="security-indicator-bar" class="bar safe completed" style="width: 95%;">
-
+                <div id="security-indicator-bar" class="bar" style="width: 100%;">
                 </div>
             </div>
         </section>
@@ -48,7 +47,8 @@
             <div class="actions">
                 <div class="password-length">
                     <p>Tamanho: <span id="password-length-text">16</span></p>
-                    <input type="range" name="password-length" id="password-length" class="slider" value="16" min="6" max="64" />
+                    <input type="range" name="password-length" id="password-length" class="slider" value="16" min="6"
+                        max="64" />
                 </div>
                 <div class="config">
                     <label class="checkbox-container">
@@ -85,6 +85,7 @@
         let passwordLength = 16;
 
 
+
         function generatePassword() {
             let chars = "abcdefghjkmnpqrstuvwxyz";
 
@@ -99,11 +100,11 @@
             if (numberCheckEl.checked) {
                 chars += numberChars;
             }
-            
+
             if (symbolCheckEl.checked) {
                 chars += symbolChars;
             }
-            
+
 
             let password = "";
 
@@ -116,17 +117,18 @@
             // console.log(password);
         }
 
+        
         function copy() {
             navigator.clipboard.writeText(inputEl.value);
         };
 
         const passwordLengthEl = document.querySelector("#password-length");
-            passwordLengthEl.addEventListener("input", function () {
-                passwordLength = passwordLengthEl.value;
-                document.querySelector('#password-length-text').innerText = passwordLength;
-                // console.log(passwordLength);
-                generatePassword();
-            });
+        passwordLengthEl.addEventListener("input", function () {
+            passwordLength = passwordLengthEl.value;
+            document.querySelector('#password-length-text').innerText = passwordLength;
+            // console.log(passwordLength);
+            generatePassword();
+        });
         upperCaseCheckEl.addEventListener('click', generatePassword);
         numberCheckEl.addEventListener('click', generatePassword);
         symbolCheckEl.addEventListener('click', generatePassword);
