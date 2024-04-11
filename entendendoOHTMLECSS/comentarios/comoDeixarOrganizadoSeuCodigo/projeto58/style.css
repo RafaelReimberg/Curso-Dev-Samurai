@@ -1,0 +1,25 @@
+/* Aqui é um comentário de teste */
+
+/* 
+    Este é um comentário muito extenso, 
+    por esse motivo não é legal colocar somente em uma 
+    linha porque pode dar ruim....
+*/
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: red;
+}
+.container {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: auto;
+    background-color: rebeccapurple;
+}
+.container span {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
