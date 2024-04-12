@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background-color: rgb(15, 5, 71);
+    
+}
+h1{
+    width: 100vw;
+    height: 10vw;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding-top: 20px;
+}
+h2{
+    width: 100vw;
+    height: 10vw;
+    color: white;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+p{
+    color: white;
+    padding-left: 40px;
+    text-align: justify;
+    font-weight: bold;
+}
