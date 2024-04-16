@@ -7,6 +7,10 @@ const Topic = () => {
 }
 
 const App = () => {
+  // states
+  // funções/lógica
+
+  // função de rendering
   return (
     <>
       <h1>Vota Tópico</h1>
