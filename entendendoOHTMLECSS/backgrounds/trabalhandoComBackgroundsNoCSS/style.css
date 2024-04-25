@@ -1,0 +1,14 @@
+body {
+    /* background: url("./img/google.png") no-repeat #000000 center fixed; */
+    background-image: url("./img/google.png");
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center;
+    background-attachment: fixed;
+}
+.circle {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
