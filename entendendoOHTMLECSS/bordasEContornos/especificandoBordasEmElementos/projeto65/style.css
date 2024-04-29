@@ -1,0 +1,16 @@
+.div1{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 10px;
+  border: 5px solid #000000;
+}
+
+.div2{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+/* video pause 05:56 */
