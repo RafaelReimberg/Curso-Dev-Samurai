@@ -1,0 +1,28 @@
+.div1{
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  margin: 10px;
+  border-width: 10px;
+  border-style: double;
+  border-color: #000000;
+  border-radius: 50%;
+
+  /* outline: 5px double #000000; */
+  outline-width: 5px;
+  outline-style: double;
+  outline-color: #000000;
+  outline-offset: 5px;
+
+}
+
+/* .div2{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 10px;
+
+  border-radius: 50%;
+
+  outline: 5px solid blue;
+} */
