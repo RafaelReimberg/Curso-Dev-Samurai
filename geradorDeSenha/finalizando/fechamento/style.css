@@ -107,7 +107,7 @@ main {
 }
 
 .security-indicator .bar.safe{
-    background-color: #27ea60;
+    background-color: #5166e0;
 }
 
 .customize {
@@ -155,7 +155,7 @@ main {
     width: 25px;
     height: 25px;
     border-radius: 25px;
-    background: #9b51e0;
+    background: #5166e0;
     cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ main {
     width: 25px;
     height: 25px;
     border-radius: 25px;
-    background: #9b51e0;
+    background: #5166e0;
     cursor: pointer;
 }
 
@@ -178,8 +178,8 @@ main {
     -ms-user-select: none;
 }
 
-.checkbox-container input{  
-    position: absolute; 
+.checkbox-container input{
+    position: absolute;
     height: 0;
     width: 0;
     opacity: 0;
@@ -201,7 +201,7 @@ main {
 }
 
 .checkbox-container input:checked ~ .checkmark{
-    background-color: #9b51e0;
+    background-color: #5166e0;
 }
 
 .checkbox-container .checkmark:after {
@@ -214,7 +214,7 @@ main {
     height: 13px;
     border: solid white;
     border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+    transform: rotate(50deg);
 }
 
 .checkbox-container input:checked ~ .checkmark:after{
@@ -227,7 +227,7 @@ main {
 }
 
 .submit button{
-    background-color: #bb6bd9;
+    background-color: #5166e0;
     font-size: 1.375rem;
     color: #fff;
     border: none;
@@ -238,7 +238,7 @@ main {
 }
 
 .submit button:hover{
-    background-color: #9b51e0;
+    background-color: #6677d4;
 }
 
 @media only screen and (max-width: 480px){
