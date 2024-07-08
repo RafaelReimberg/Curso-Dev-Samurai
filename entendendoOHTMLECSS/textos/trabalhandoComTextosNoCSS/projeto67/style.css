@@ -1,0 +1,8 @@
+p {
+    color: red;
+    text-align: justify;
+    text-transform: capitalize;
+}
+a {
+    text-decoration: line-through;
+}

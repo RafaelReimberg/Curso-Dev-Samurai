@@ -2,7 +2,8 @@
   width: 200px;
   height: 200px;
   background-color: transparent;
-  margin: 10px;
+  margin: auto;
+  margin-top: 10%;
   border-width: 10px;
   border-style: double;
   border-color: #000000;
