@@ -1,0 +1,96 @@
+.container {
+    width: 90%;
+    min-height: 130px;
+    margin: auto;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.container .w-100 {
+    width: 100%;
+}
+/* Parte 1 do filtro */
+.container .w-100 .col-6-l {
+    width: 50%;
+    float: left;
+    margin-bottom: 16px;
+}
+.container .w-100 .col-6-l label {
+    font-size: 16px;
+    font-weight: 900;
+}
+.container .w-100 .col-6-l input {
+    width: 98%;
+    height: 30px;
+    border: 1px solid #FF555D;
+    border-radius: 2px;
+    background-color: transparent;
+    padding-left: 5px;
+    color: #F2F2F2;
+    font-family: "Roboto-Regular";
+}
+.container .w-100 .col-6-l input:active {
+    border: 1px solid #FF555D;
+    border-radius: 2px;
+    background-color: #FF555D65;
+    outline: none;
+}
+.container .w-100 .col-6-l input:focus {
+    border: 1px solid #FF555D !important;
+    border-radius: 2px;
+    background-color: #FF555D65;
+    outline: none;
+}
+/* Fim da parte 1 do filtro */
+
+/* Parte 2 do filtro */
+.container .w-100 .col-6-r {
+    min-width: 50%;
+    float: right;
+    margin-bottom: 16px;
+}
+.container .w-100 .col-6-r label {
+    font-size: 16px;
+    font-weight: 900;
+}
+.container .w-100 .col-6-r input {
+    width: 98%;
+    height: 30px;
+    border: 1px solid #FF555D;
+    border-radius: 2px;
+    background-color: transparent;
+    padding-left: 5px;
+    color: #F2F2F2;
+    font-family: "Roboto-Regular";
+}
+.container .w-100 .col-6-r input:active {
+    border: 1px solid #FF555D;
+    border-radius: 2px;
+    background-color: #FF555D65;
+    outline: none;
+}
+.container .w-100 .col-6-r input:focus {
+    border: 1px solid #FF555D !important;
+    border-radius: 2px;
+    background-color: #FF555D65;
+    outline: none;
+}
+/* Fim da parte 2 do filtro */
+
+/* Botão */
+.container .w-100 .btn-pesquisa {
+    float: right;
+    margin-right: 12px;
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #FF555D !important;
+    border-radius: 2px;
+    color: #F2F2F2;
+    font-family: "Roboto-Medium";
+    font-size: 16px;
+    font-weight: 900;
+}
+.container .w-100 .btn-pesquisa:hover {
+    background-color: #FF555D;
+}

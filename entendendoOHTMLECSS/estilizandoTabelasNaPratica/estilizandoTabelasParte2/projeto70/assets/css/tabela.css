@@ -1,0 +1,59 @@
+.container-table{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.container-table table, th, tr, tfoot > tr > td {
+  border: 1px solid #FF555D;
+  border-collapse: collapse;
+}
+.container-table table{
+  width: 100%;
+}
+.container-table table thead{
+  font-family: "Roboto-Medium";
+  text-align: center;
+}
+.container-table table thead th{
+  width: 100px;
+  height: 40px;
+  border-bottom: 1px solid #FF555D;
+}
+.container-table table tbody{
+  font-family: "Roboto-Medium";
+  text-align: center;
+}
+.container-table table tbody tr{
+  width: 100px;
+  height: 40px;
+}
+/* Seletor de Elementos*/
+.container-table table tbody tr:nth-child(2n){
+  background-color: #FF555D;
+}
+.container-table table tbody tr:hover > td{
+  background-color: #FF555DBD;
+  color: #f2f2f2;
+  font-weight: 700;
+}
+.container-table table tfoot{
+  width: 100px;
+  height: 40px;
+  border-bottom: 1px solid #FF555D;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+}
+.container-table table tfoot td {
+  width: 100px;
+  height: 50px;
+  border-bottom: 1px solid #FF555D;
+}
+/* Classes Utils */
+.sb{
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent !important;
+  border-right: 1px solid transparent;
+}
