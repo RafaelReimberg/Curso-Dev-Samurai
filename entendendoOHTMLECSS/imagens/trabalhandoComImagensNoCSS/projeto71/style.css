@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/paisagem.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* .background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/img/paisagem.jpg");
+    background-size: cover;
+} */
+
+.sobre {
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
