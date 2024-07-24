@@ -1,0 +1,33 @@
+// Variaveis Globais
+
+$color-red: red;
+
+$width: 300px;
+$height: 150px;
+$wd-especial: 340px;
+
+// Variaveis privadas
+
+@mixin div-especial{
+  width: 310px;
+  height: 170px;
+}
+
+.div1{
+  @include div-especial();
+  width: $wd-especial;
+  margin-bottom: 10px;
+  background-color: red;
+}
+.div2{
+  width: $width;
+  height: $height;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+.div3{
+  width: $width;
+  height: $height;
+  margin-bottom: 10px;
+  background-color: salmon;
+}

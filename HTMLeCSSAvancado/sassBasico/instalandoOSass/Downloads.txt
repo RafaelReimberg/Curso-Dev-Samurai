@@ -1,0 +1,15 @@
+[CLIENTE SASS]
+
+Software Koala: http://koala-app.com/
+
+[COMANDO NPM]
+
+npm install -g sass
+
+Obs.: Ao rodar o comando, precisa inseri o seguinte diretório no PATH do Sistema.
+
+C:\Users\NOME-USUARIO\AppData\Roaming\npm
+
+[PLUGIN LIVE SASS COMPILER VS CODE]
+
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass

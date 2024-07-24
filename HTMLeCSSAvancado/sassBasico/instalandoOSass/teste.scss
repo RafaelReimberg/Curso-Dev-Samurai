@@ -1,0 +1,17 @@
+$variavel1: 300px;
+$variavel2: 150px;
+
+$width: 300px;
+$height: 150px;
+
+.teste1{
+  width: $variavel1;
+  height: $variavel2;
+}
+
+.teste2{
+  width: $width;
+  height: $height;
+  background-color: red;
+  margin-bottom: 10px;
+}
