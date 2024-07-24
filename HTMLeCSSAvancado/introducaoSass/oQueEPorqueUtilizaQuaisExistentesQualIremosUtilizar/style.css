@@ -1,0 +1,14 @@
+.div{
+  width: 300px;
+  height: 150px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.color-yellow{
+  background-color: yellow;
+}
+
+.color-orange{
+  background-color: orange;
+}
