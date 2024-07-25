@@ -1,0 +1,13 @@
+$colors: (
+    "primary": tomato,
+    "secondary": pink
+);
+
+@function bg-colors($key) {
+
+    @if not map-has-key($colors, $key) {
+        @warn "Esse valor #{$key} não existe!";
+    }
+
+    @return map-get($colors, $key);
+}

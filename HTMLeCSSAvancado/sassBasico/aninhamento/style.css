@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -16,7 +15,6 @@ html, body {
   padding-top: 5%;
   background-color: red;
 }
-
 .title h1 {
   text-align: center;
   font-size: 32px;
@@ -29,20 +27,16 @@ html, body {
   margin: auto;
   padding: 10px;
 }
-
 .body h2 {
   font-size: 28px;
   color: seagreen;
 }
-
 .body ol {
   margin-top: 10px;
   margin-left: 15px;
   width: 100%;
 }
-
 .body ol li {
-  width: 100px;
+  width: 150px;
   height: 30px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

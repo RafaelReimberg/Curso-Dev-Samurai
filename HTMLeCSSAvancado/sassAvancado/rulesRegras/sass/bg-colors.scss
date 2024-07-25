@@ -1,0 +1,23 @@
+// Background-colors
+
+$bg-red: red;
+$bg-yellow: yellow;
+$bg-tomato: green;
+
+@mixin createDivs {
+    width: 300px;
+    height: 150px;
+}
+
+@function colorsDiv($param) {
+    $color: ();
+
+    @if $param == green {
+        $color: green;
+    }
+    @else {
+        $color: black;
+    }
+
+    @return $color;
+}

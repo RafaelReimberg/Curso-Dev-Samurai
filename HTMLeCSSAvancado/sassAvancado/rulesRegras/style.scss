@@ -1,0 +1,7 @@
+@use "sass/bg-colors";
+
+.div1 {
+
+    @include bg-colors.createDivs();
+    background-color: bg-colors.colorsDiv(green);
+}
