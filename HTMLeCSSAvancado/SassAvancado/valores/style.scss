@@ -1,0 +1,33 @@
+// Strings
+$font-family-roboto: "Roboto";
+$font-family-roboto: Roboto;
+
+// Number
+$font-size-12: 12px;
+$font-size-12: 12;
+
+$soma: 1px + 1px;
+@debug($soma);
+
+$subtracao: 10px - 1px;
+@debug($subtracao);
+
+// Cores
+$color1: #000000;
+$color2: blue;
+$color3: rgba(107, 113, 127, 0.1);
+
+// Listas
+$lista1: (1px, 1px, Arial, sans-serif);
+@debug($lista1);
+
+$lista2: (1px 1px Arial sans-serif);
+@debug($lista2);
+
+// Booleanos
+$true: true;
+$false: false;
+
+// Mapas
+$mapa1: ("cor": red, "background": black);
+@debug($mapa1);

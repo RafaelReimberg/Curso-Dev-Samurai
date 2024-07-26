@@ -2,22 +2,27 @@
 
 $bg-red: red;
 $bg-yellow: yellow;
-$bg-tomato: green;
+$bg-tomato: tomato;
 
 @mixin createDivs {
     width: 300px;
     height: 150px;
 }
 
+// funçao
+
 @function colorsDiv($param) {
     $color: ();
 
-    @if $param == green {
-        $color: green;
+    @if $param == tomato {
+        $color: tomato;
     }
     @else {
         $color: black;
     }
 
+    // @debug $color;
+    // @warn "Por favor, verifique se a cor do debug anterior é Tomato";
+    // @error "Isso aqui é um erro :(";
     @return $color;
 }
