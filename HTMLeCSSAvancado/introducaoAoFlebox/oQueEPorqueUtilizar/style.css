@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: royalblue;
+
+    .div1 {
+        width: 50%;
+        height: 150px;
+        margin: 10px;
+        background-color: red;
+    }
+
+    .div2 {
+        width: 50%;
+        height: 150px;
+        margin: 10px;
+        background-color: red;
+    }
+}
+/* .container .div1 {
+    width: 50%;
+    height: 150px;
+    margin: 10px;
+    background-color: red;
+}
+.container .div2 {
+    width: 50%;
+    height: 150px;
+    margin: 10px;
+    background-color: red;
+} */
