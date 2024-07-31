@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+  div{
+    width: 100%;
+    margin: 10px;
+    background-color: orangered;
+  }
+}
+
+/* .container div{
+  width: 300px;
+    background-color: orangered;
+} */
