@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: black;
+}
+.number {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    background: tomato;
+}
+
+.order-0 {
+    order: 0;
+}
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.order-4 {
+    order: 4;
+}
+.order-5 {
+    order: 5;
+}
