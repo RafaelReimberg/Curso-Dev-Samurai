@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-auto-columns: 100px;
+    column-gap: 10px;
+    width: 600px;
+    background-color: firebrick;
+}
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+}
+.column-3 {
+    grid-column: 3;
+}
+.column-4 {
+    grid-column: 4;
+}

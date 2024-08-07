@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+}
+.grid {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    width: 400px;
+    height: 400px;
+    background-color: lightcoral;
+}
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Colors */
+.color-green {
+    background-color: green;
+}
+.color-pink {
+    background-color: pink;
+}
+.color-orange {
+    background-color: orange;
+}
+.color-blue {
+    background-color: blue;
+}

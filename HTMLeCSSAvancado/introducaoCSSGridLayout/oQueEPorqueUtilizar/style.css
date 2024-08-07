@@ -25,7 +25,7 @@ html, body {
     background-color: springgreen;
     grid-area: header;
 }
-.body {
+ .body {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,7 +48,7 @@ html, body {
 
 /* Grid Areas */
 .grid-areas {
-    grid-template-areas: 
+    grid-template-areas:
     "header header"
     "body body"
     "footer footer";
