@@ -53,5 +53,45 @@ html, body {
   margin: auto;
   margin-bottom: 20px;
 }
+.grid .formulario .form-group input {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F8F7EE;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.grid .formulario .form-group input:active {
+  border: 2px solid #098171;
+}
+.grid .formulario .form-group input:focus {
+  border: 2px solid #098171;
+}
+.grid .formulario .form-group button {
+  width: 140px;
+  height: 40px;
+  background-color: #098171;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.grid .formulario .form-group button:hover {
+  background-color: #056659;
+}
+.grid .formulario .form-group button:active {
+  background-color: #056659;
+}
+.grid .formulario .m-auto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
