@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
