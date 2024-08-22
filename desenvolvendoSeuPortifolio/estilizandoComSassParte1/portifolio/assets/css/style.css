@@ -33,5 +33,90 @@ html, body {
   font-size: 1rem;
   text-align: center;
 }
+.webview .intro .container .m-auto-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+}
+.webview .intro .container .m-auto-btn .btn-portfolio {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  width: 160px;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.webview .sobre {
+  width: 100%;
+}
+.webview .sobre .container {
+  padding: 10px;
+}
+.webview .sobre .container .title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.webview .sobre .container .title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29ae81;
+}
+.webview .sobre .container .row {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.webview .sobre .container .row .c-photo {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.webview .sobre .container .row .c-photo img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.webview .sobre .container .row .c-descricao {
+  width: 100%;
+}
+.webview .sobre .container .row .c-descricao p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.webview .sobre .container .row .c-descricao .habilidades {
+  width: 100%;
+}
+.webview .sobre .container .row .c-descricao .habilidades .h-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.webview .sobre .container .row .c-descricao .habilidades .h-item .h-title {
+  width: 100%;
+}
+.webview .sobre .container .row .c-descricao .habilidades .h-item .h-title h3 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.webview .sobre .container .row .c-descricao .habilidades .h-item .h-c-porcentagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */

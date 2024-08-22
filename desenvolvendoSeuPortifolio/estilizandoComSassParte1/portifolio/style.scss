@@ -27,15 +27,117 @@ html, body {
     color: config.$color-white;
 
     .container{
+
       h1{
         font-size: 2rem;
         text-align: center;
       }
+
       p{
         font-size: 1rem;
         text-align: center;
       }
+
+      .m-auto-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 8px;
+
+        .btn-portfolio{
+          @include config.font-paragraf;
+          width: 160px;
+          height: 35px;
+          border-radius: 6px;
+          border: 1px solid config.$color-white;
+          background-color: transparent;
+          color: config.$color-white;
+        }
+      }
+
     }
   }
 }
-// 4:13 stop
+
+.webview{
+
+  .sobre{
+    width: 100%;
+
+    .container{
+      padding: 10px;
+
+      .title{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+        h2{
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
+        }
+      }
+
+      .row{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .c-photo{
+          width: 100%;
+          margin: auto;
+          margin-bottom: 30px;
+
+          img{
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+          }
+        }
+
+        .c-descricao{
+          width: 100%;
+
+          p{
+            @include config.font-paragraf;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+
+          .habilidades{
+            width: 100%;
+
+            .h-item{
+              width: 100%;
+              margin-bottom: 10px;
+
+              .h-title{
+                width: 100%;
+
+                h3{
+                  @include config.font-paragraf;
+                  font-size: 1rem;
+                  font-weight: bold;
+                }
+              }
+
+              .h-c-porcentagem{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                min-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 15:08
