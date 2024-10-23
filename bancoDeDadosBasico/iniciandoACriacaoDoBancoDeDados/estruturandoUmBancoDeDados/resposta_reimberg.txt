@@ -1,0 +1,3 @@
+usuario -> emprestimos -> livro_emprestimos -> livro -> sessão
+
+Usuario (1,n) emprestimo (1, n) livro_emprestimos (n, 1) livro (1, n) sessão
