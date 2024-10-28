@@ -506,7 +506,8 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .webview .portfolios .container .p-projetos .projeto .photos {
     height: 100%;
@@ -639,7 +640,8 @@ html, body {
     grid-template-rows: 1fr;
     grid-auto-rows: 1fr;
     row-gap: 10px;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .webview .portfolios .container .p-projetos .projeto .photos {
     height: 100%;
@@ -716,6 +718,4 @@ html, body {
 .webview .container-whatsapp .btn-whatsapp:hover {
   background-color: #1E8865;
   border: 2px solid #ffffff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

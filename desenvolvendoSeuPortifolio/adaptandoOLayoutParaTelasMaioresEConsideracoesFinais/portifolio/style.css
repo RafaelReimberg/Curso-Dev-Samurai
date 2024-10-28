@@ -506,7 +506,8 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .webview .portfolios .container .p-projetos .projeto .photos {
     height: 100%;
@@ -639,7 +640,8 @@ html, body {
     grid-template-rows: 1fr;
     grid-auto-rows: 1fr;
     row-gap: 10px;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .webview .portfolios .container .p-projetos .projeto .photos {
     height: 100%;
@@ -683,39 +685,4 @@ html, body {
   .webview .contato .container .formulario form .form-group .controls {
     padding: 5px;
   }
-}
-.webview .container-whatsapp {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
-  padding: 10px;
-  min-width: 40px;
-  min-height: 40px;
-  z-index: 999;
-}
-.webview .container-whatsapp .btn-whatsapp {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: #29ae81;
-}
-.webview .container-whatsapp .btn-whatsapp i {
-  font-size: 2rem;
-  color: #ffffff;
-}
-.webview .container-whatsapp .btn-whatsapp:hover {
-  background-color: #1E8865;
-  border: 2px solid #ffffff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
